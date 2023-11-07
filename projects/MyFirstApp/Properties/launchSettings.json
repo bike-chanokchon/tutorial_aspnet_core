@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "MyFirstApp": {
+    "Kestrel": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
