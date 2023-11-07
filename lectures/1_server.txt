@@ -1,0 +1,26 @@
+
+    :: ASP.NET Core Server
+    ASP.NET Core จำเป็นต้องมี web server เพื่อจัดการกับ request และ response
+
+    :: Kestrel (Application Server)
+        - เป็น HTTP Server ของ ASP.NET Core 
+        - สามารถทำงานได้ทั้ง Development และ Production
+
+    * ใน Production จะไม่นิยมใช้ Kestrel กัน แต่จะใช้ Reverse Proxy Servers แทน
+
+    :: Reverse Proxy Server
+        - IIS
+        - Nginx
+        - Apache
+
+    :: Server Architechure
+    [Internet] <--- [HTTP] ---> [Kestrel] <------> [Application Code]
+    [Internet] <--- [HTTP] ---> [Reverse Proxy] <------> [Kestrel] <------> [Application Code]
+
+    :: Reverse Proxy Server Benefits
+        - Load Balancing
+        - Caching
+        - URL Rewriting
+        - Decompressing the requests
+        - Authentication
+        - Descrytion of SSSL Certificates
